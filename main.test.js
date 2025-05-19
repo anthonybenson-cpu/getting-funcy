@@ -1,11 +1,37 @@
 /**********************************
  * YOUR CODE GOES HERE THIS TIME! *
- **********************************/
+ *********************************************************************************************************************
+let a = 10;
+let b = 11;
+let c = 0;
+let name = 'Benson';
+let lastname = 'Williams';
+let trafficlight = 'red';
 
-abc
-
-
-
+function addition(){
+c = a + b;
+}
+function subtraction(){
+c = a - b;
+}
+function multiplication(){
+c = a * b;
+}
+function division(){
+c = a / b;
+}
+function incrementA(){
+a += 1;
+}
+function decrementB(){
+a -= 1;
+}
+function fullName(){
+name =name +" "+ lastname;
+}
+function lightChange(){
+trafficlight = 'green';
+}
 /*********************************************************************************************************************
 
  * CODE BELOW HERE IS FOR INTERNAL USE ONLY! IT ENSURES THAT THE TESTING *
