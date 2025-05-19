@@ -32,6 +32,21 @@ name =name +" "+ lastname;
 function lightChange(){
 trafficlight = 'green';
 }
+addition();
+console.log(c); // Output: 15
+
+multiplication();
+console.log(c); // Output: 50
+
+incrementA();
+console.log(a); // Output: 11
+
+fullName();
+console.log(name); // Output: "Benson Williams"
+
+lightChange();
+console.log(trafficLight); // Output: "green"
+
 /*********************************************************************************************************************
 
  * CODE BELOW HERE IS FOR INTERNAL USE ONLY! IT ENSURES THAT THE TESTING *
