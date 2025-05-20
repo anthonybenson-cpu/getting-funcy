@@ -1,51 +1,38 @@
 /**********************************
  * YOUR CODE GOES HERE THIS TIME! *
- *********************************************************************************************************************
-let a = 10;
-let b = 11;
+ *********************************************************************************************************************/
+let a = 1;
+let b = 2;
 let c = 0;
-let name = 'Benson';
-let lastname = 'Williams';
-let trafficlight = 'red';
+let name = "Benson";
+let lastName = "Williams";
+let trafficLight = "red";
+function addition() {
+  c = a + b
+}
+function subtraction() {
+  c = a - b
+}
+subtraction()
+function multiplication() {
+  c = b * a
+}
+function division() {
+  c = a / b
+}
+function incrementA() {
+  a = a + 1
+}
+function decrementB() {
+  b -= 1
+}
+function fullName() {
+  name = name + " " + lastName
+}
+function lightChange() {
+  trafficLight = "green"
+}
 
-function addition(){
-c = a + b;
-}
-function subtraction(){
-c = a - b;
-}
-function multiplication(){
-c = a * b;
-}
-function division(){
-c = a / b;
-}
-function incrementA(){
-a += 1;
-}
-function decrementB(){
-a -= 1;
-}
-function fullName(){
-name =name +" "+ lastname;
-}
-function lightChange(){
-trafficlight = 'green';
-}
-addition();
-console.log(c); // Output: 15
-
-multiplication();
-console.log(c); // Output: 50
-
-incrementA();
-console.log(a); // Output: 11
-
-fullName();
-console.log(name); // Output: "Benson Williams"
-
-lightChange();
-console.log(trafficLight); // Output: "green"
 
 /*********************************************************************************************************************
 
@@ -117,53 +104,53 @@ const assert = require('assert');
 describe('Getting Funcy Tests', () => {
   // Test addition function
   it('should correctly add a and b', () => {
-      addition();
-      assert.strictEqual(c, a + b);
+    addition();
+    assert.strictEqual(c, a + b);
   });
 
   // Test subtraction function
   it('should correctly subtract b from a', () => {
-      subtraction();
-      assert.strictEqual(c, a - b);
+    subtraction();
+    assert.strictEqual(c, a - b);
   });
 
   // Test multiplication function
   it('should correctly multiply a and b', () => {
-      multiplication();
-      assert.strictEqual(c, a * b);
+    multiplication();
+    assert.strictEqual(c, a * b);
   });
 
   // Test division function
   it('should correctly divide a by b', () => {
-      division();
-      assert.strictEqual(c, a / b);
+    division();
+    assert.strictEqual(c, a / b);
   });
 
   // Test incrementA function
   it('should increment a by 1', () => {
-      let val = a
-      incrementA();
-      assert.strictEqual(a, val + 1);
+    let val = a
+    incrementA();
+    assert.strictEqual(a, val + 1);
   });
 
   // Test decrementB function
   it('should decrement b by 1', () => {
-      let val = b
-      decrementB();
-      assert.strictEqual(b, val - 1);
+    let val = b
+    decrementB();
+    assert.strictEqual(b, val - 1);
   });
 
   // Test fullName function
   it('should set name as first name and last name combined', () => {
-      let firstName = name
-      fullName();
-      
-      assert.strictEqual(name, firstName + ' ' + lastName);
+    let firstName = name
+    fullName();
+
+    assert.strictEqual(name, firstName + ' ' + lastName);
   });
 
   // Test lightChange function
   it('should set trafficLight to green', () => {
-      lightChange();
-      assert.strictEqual(trafficLight, "green");
+    lightChange();
+    assert.strictEqual(trafficLight, "green");
   });
 });
